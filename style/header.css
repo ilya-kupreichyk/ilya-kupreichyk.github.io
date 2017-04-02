@@ -1,0 +1,171 @@
+#header {
+  display: flex;
+  justify-content: flex-end;
+  background: url("../images/header_image.jpg") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+#header #header_inner {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+#header #header_inner .information {
+  text-align: center;
+}
+#header #header_inner .information img {
+  width: 80px;
+  height: 80px;
+  margin-top: -10px;
+}
+#header #header_inner .information .text_logo {
+  font-family: UkrainianChance;
+  text-decoration: none;
+  font-size: 29pt;
+  text-align: right;
+  color: #1a7480;
+  margin-top: -30px;
+}
+#header #header_inner .information .text_info {
+  font-family: "Yu Gothic UI";
+  color: #1e8795;
+  text-align: center;
+  font-size: 21pt;
+  font-weight: 400;
+  padding: 0 6px;
+  margin: 0;
+}
+#header #header_inner .header_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#header #header_inner .header_menu .login_top {
+  display: flex;
+  align-items: center;
+}
+#header #header_inner .header_menu .login_top .login1 {
+  display: flex;
+  list-style: none;
+  margin-right: 35px;
+  padding-bottom: 5px;
+}
+#header #header_inner .header_menu .login_top .login1 .login2 {
+  position: relative;
+}
+#header #header_inner .header_menu .login_top .login1 .login2:hover .login3 {
+  height: 1200%;
+}
+#header #header_inner .header_menu .login_top .login1 .login3 {
+  display: block;
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+  top: 110%;
+  left: -250%;
+  transition: height 0.5s;
+  opacity: 0.8;
+}
+#header #header_inner .header_menu .login_top .login1 .login3 li {
+  display: flex;
+  flex-direction: column;
+}
+#header #header_inner .header_menu .login_top .login1 .login3 form {
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: white;
+  width: 220px;
+  height: 150px;
+  padding: 20px;
+}
+#header #header_inner .header_menu .login_top .login1 .login3 form input[type="email"],
+#header #header_inner .header_menu .login_top .login1 .login3 form input[type="password"] {
+  width: 200px;
+  height: 20px;
+  border-radius: 13px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  border: 1px solid #1a7480;
+  box-shadow: inset 0 1px 18px -2px rgba(0, 0, 0, 0.75);
+}
+#header #header_inner .header_menu .login_top .login1 .login3 form input[type="email"]:focus,
+#header #header_inner .header_menu .login_top .login1 .login3 form input[type="password"]:focus {
+  outline: none;
+}
+#header #header_inner .header_menu .login_top .login1 .login3 form input:active {
+  outline: none;
+}
+#header #header_inner .header_menu .login_top .login1 .login3 form a {
+  color: #1a7480;
+  text-align: center;
+}
+#header #header_inner .header_menu .login_top .login1 .login3 form input[type="submit"] {
+  margin-left: 25px;
+  border-radius: 10px;
+  border: none;
+  width: 70px;
+  background-color: #4b2a36;
+  color: white;
+}
+#header #header_inner .header_menu .login_top .login1 .login3 form input[type="submit"]:hover {
+  background-color: #8c4f65;
+}
+#header #header_inner .header_menu .login_top .login1 a {
+  display: block;
+  text-decoration: none;
+  padding: 0 5px 0 5px;
+  color: white;
+}
+#header #header_inner .header_menu .login_top .login1 a:hover {
+  color: white;
+  opacity: 0.8;
+}
+#header #header_inner .header_menu .login_top .search {
+  display: flex;
+  justify-content: flex-end;
+  width: 120px;
+}
+#header #header_inner .header_menu .login_top .search input[type="search"] {
+  border: 1px solid white;
+  outline: none;
+  border-radius: 10px;
+  padding: 0 10px;
+  width: 130px;
+  height: 20px;
+  background-color: inherit;
+  background: url("../images/search.png") no-repeat 107px;
+  opacity: 0.7;
+}
+#header #header_inner .header_menu .login_top .search input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+#header #header_inner .header_menu .login_top .search input[type="search"]:focus {
+  background-color: white;
+}
+#header #header_inner .header_menu .menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+#header #header_inner .header_menu .menu .references_header {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  padding: 0;
+}
+#header #header_inner .header_menu .menu .references_header a {
+  font-family: "Kozuka Gothic Pro";
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 13px;
+  transition: 0.5s;
+}
+#header #header_inner .header_menu .menu .references_header a:hover {
+  color: #4b2a36;
+  background-color: white;
+  opacity: 0.6;
+  text-decoration: underline;
+  border-radius: 4px;
+}
