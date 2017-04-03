@@ -1,0 +1,129 @@
+@import "variables";
+@import "fonts";
+
+
+
+#registration {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+
+h3 {
+  color: @colorFooter;
+}
+
+  .gender {
+display: flex;
+    padding-bottom: 20px;
+    .genderUser{
+margin-left: 20%;
+    }
+  }
+
+  .surName {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+input {
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid @colorLogo;
+
+  &:focus {
+    outline: none;
+
+      border-bottom: 2px solid @colorRed;
+
+  }
+}
+
+  }
+
+
+  .input-group {
+    display: flex;
+    align-items: center;
+padding-bottom: 20px;
+    justify-content: space-between;
+
+    input {
+      order: 1;
+      width: 300px;
+      border: none;
+      border-bottom: 1px solid @colorLogo;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:required + label::after {
+
+        content: "*";
+        color: red;
+      }
+    }
+
+    textarea {
+      order: 1;
+      max-width: 300px;
+      min-width: 300px;
+      max-height: 150px;
+      border: none;
+      border-bottom: 1px solid @colorLogo;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:required + label::after {
+
+        content: "*";
+        color: red;
+      }
+    }
+
+  }
+
+  .select {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    select {
+      width: 300px;
+      border: none;
+      border-bottom: 1px solid @colorLogo;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .phone {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+
+    input {
+      width: 300px;
+      border: none;
+      border-bottom: 1px solid @colorLogo;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+.submit {
+  text-align: center;
+  margin-top: 20px;
+}
+
+}
+
+
