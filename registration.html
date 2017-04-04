@@ -10,7 +10,6 @@
 
 <header id="header">
 
-
     <div id="header_inner">
         <div class="information">
             <img src="images/logo.jpg">
@@ -27,6 +26,7 @@
             <div class="">
                 <section class="login_top">
                     <ul class="login1">
+                        <li><a href="index.html">Главная</a></li>
                         <li class="login2"><a href="#">Войти</a>
                             <ul class="login3">
                                 <li>
@@ -37,9 +37,10 @@
                                         </div>
                                         <div class="password">
                                             <label for="password">Пороль</label>
-                                            <input type="password" name="password" id="password" placeholder="" required="">
+                                            <input type="password" name="password" id="password" placeholder=""
+                                                   required="">
                                         </div>
-                                        <input type="checkbox"  name="remember" id="checkbox">
+                                        <input type="checkbox" name="remember" id="checkbox">
                                         <label for="checkbox">Запомнить?</label>
 
 
@@ -76,308 +77,399 @@
         </nav>
 
     </div>
+
 </header>
 
 <section id="registration">
 
-    <form>
+    <form class="form">
         <h3>Регистрация</h3>
+        <div class="row">
+            <div class="input-group">
 
-    <div class="input-group">
-        <input name="first" type="text" id="firstName" autofocus required>
-        <label for="firstName">Имя</label>
-    </div>
+                <input name="first" type="text" id="firstName" required>
+                <label for="firstName">Имя</label>
 
-    <div class="input-group">
-        <input name="last" type="text" id="lastName" required>
-        <label for="lastName">Фамилия</label>
-    </div>
-
-    <div class="surName">
-        <label for="surName">Отчество</label>
-        <input name="sur" type="text" id="surName">
-    </div>
-
-        <div class="gender">
-            <label>Пол</label>
-
-            <div class="genderUser">
-           <div class="">
-               <input name="gender" type="radio" id="genderMale" checked>
-            <label for="genderMale">Мужской</label>
-           </div>
-
-            <div class="">
-                <input name="gender" type="radio" id="genderFemale">
-                <label for="genderFemale">Женский</label>
             </div>
-            </div>
-        </div>
-
-
-    <div class="input-group">
-        <input name="data" type="date" id="birthDate" required>
-        <label for="birthDate">Дата рождения</label>
-    </div>
-
-        <div class="select">
-            <label for="country">Страна</label>
-            <select size="1" name="countru" id="country">
-                <option value="AX">AALAND ISLANDS</option>
-                <option value="AF">AFGHANISTAN</option>
-                <option value="AL">ALBANIA</option>
-                <option value="DZ">ALGERIA</option>
-                <option value="AS">AMERICAN SAMOA</option>
-                <option value="AD">ANDORRA</option>
-                <option value="AO">ANGOLA</option>
-                <option value="AI">ANGUILLA</option>
-                <option value="AQ">ANTARCTICA</option>
-                <option value="AG">ANTIGUA AND BARBUDA</option>
-                <option value="AR">ARGENTINA</option>
-                <option value="AM">ARMENIA</option>
-                <option value="AW">ARUBA</option>
-                <option value="AU">AUSTRALIA</option>
-                <option value="AT">AUSTRIA</option>
-                <option value="AZ">AZERBAIJAN</option>
-                <option value="BS">BAHAMAS</option>
-                <option value="BH">BAHRAIN</option>
-                <option value="BD">BANGLADESH</option>
-                <option value="BB">BARBADOS</option>
-                <option selected value="BY">BELARUS</option>
-                <option value="BE">BELGIUM</option>
-                <option value="BZ">BELIZE</option>
-                <option value="BJ">BENIN</option>
-                <option value="BM">BERMUDA</option>
-                <option value="BT">BHUTAN</option>
-                <option value="BO">BOLIVIA</option>
-                <option value="BA">BOSNIA AND HERZEGOWINA</option>
-                <option value="BW">BOTSWANA</option>
-                <option value="BV">BOUVET ISLAND</option>
-                <option value="BR">BRAZIL</option>
-                <option value="IO">BRITISH INDIAN OCEAN TERRITORY</option>
-                <option value="BN">BRUNEI DARUSSALAM</option>
-                <option value="BG">BULGARIA</option>
-                <option value="BF">BURKINA FASO</option>
-                <option value="BI">BURUNDI</option>
-                <option value="KH">CAMBODIA</option>
-                <option value="CM">CAMEROON</option>
-                <option value="CA">CANADA</option>
-                <option value="CV">CAPE VERDE</option>
-                <option value="KY">CAYMAN ISLANDS</option>
-                <option value="CF">CENTRAL AFRICAN REPUBLIC</option>
-                <option value="TD">CHAD</option>
-                <option value="CL">CHILE</option>
-                <option value="CN">CHINA</option>
-                <option value="CX">CHRISTMAS ISLAND</option>
-                <option value="CO">COLOMBIA</option>
-                <option value="KM">COMOROS</option>
-                <option value="CK">COOK ISLANDS</option>
-                <option value="CR">COSTA RICA</option>
-                <option value="CI">COTE D'IVOIRE</option>
-                <option value="CU">CUBA</option>
-                <option value="CY">CYPRUS</option>
-                <option value="CZ">CZECH REPUBLIC</option>
-                <option value="DK">DENMARK</option>
-                <option value="DJ">DJIBOUTI</option>
-                <option value="DM">DOMINICA</option>
-                <option value="DO">DOMINICAN REPUBLIC</option>
-                <option value="EC">ECUADOR</option>
-                <option value="EG">EGYPT</option>
-                <option value="SV">EL SALVADOR</option>
-                <option value="GQ">EQUATORIAL GUINEA</option>
-                <option value="ER">ERITREA</option>
-                <option value="EE">ESTONIA</option>
-                <option value="ET">ETHIOPIA</option>
-                <option value="FO">FAROE ISLANDS</option>
-                <option value="FJ">FIJI</option>
-                <option value="FI">FINLAND</option>
-                <option value="FR">FRANCE</option>
-                <option value="GF">FRENCH GUIANA</option>
-                <option value="PF">FRENCH POLYNESIA</option>
-                <option value="TF">FRENCH SOUTHERN TERRITORIES</option>
-                <option value="GA">GABON</option>
-                <option value="GM">GAMBIA</option>
-                <option value="GE">GEORGIA</option>
-                <option value="DE">GERMANY</option>
-                <option value="GH">GHANA</option>
-                <option value="GI">GIBRALTAR</option>
-                <option value="GR">GREECE</option>
-                <option value="GL">GREENLAND</option>
-                <option value="GD">GRENADA</option>
-                <option value="GP">GUADELOUPE</option>
-                <option value="GU">GUAM</option>
-                <option value="GT">GUATEMALA</option>
-                <option value="GN">GUINEA</option>
-                <option value="GW">GUINEA-BISSAU</option>
-                <option value="GY">GUYANA</option>
-                <option value="HT">HAITI</option>
-                <option value="HM">HEARD AND MC DONALD ISLANDS</option>
-                <option value="HN">HONDURAS</option>
-                <option value="HK">HONG KONG</option>
-                <option value="HU">HUNGARY</option>
-                <option value="IS">ICELAND</option>
-                <option value="IN">INDIA</option>
-                <option value="ID">INDONESIA</option>
-                <option value="IQ">IRAQ</option>
-                <option value="IE">IRELAND</option>
-                <option value="IL">ISRAEL</option>
-                <option value="IT">ITALY</option>
-                <option value="JM">JAMAICA</option>
-                <option value="JP">JAPAN</option>
-                <option value="JO">JORDAN</option>
-                <option value="KZ">KAZAKHSTAN</option>
-                <option value="KE">KENYA</option>
-                <option value="KI">KIRIBATI</option>
-                <option value="KW">KUWAIT</option>
-                <option value="KG">KYRGYZSTAN</option>
-                <option value="LA">LAO PEOPLE'S DEMOCRATIC REPUBLIC</option>
-                <option value="LV">LATVIA</option>
-                <option value="LB">LEBANON</option>
-                <option value="LS">LESOTHO</option>
-                <option value="LR">LIBERIA</option>
-                <option value="LY">LIBYAN ARAB JAMAHIRIYA</option>
-                <option value="LI">LIECHTENSTEIN</option>
-                <option value="LT">LITHUANIA</option>
-                <option value="LU">LUXEMBOURG</option>
-                <option value="MO">MACAU</option>
-                <option value="MG">MADAGASCAR</option>
-                <option value="MW">MALAWI</option>
-                <option value="MY">MALAYSIA</option>
-                <option value="MV">MALDIVES</option>
-                <option value="ML">MALI</option>
-                <option value="MT">MALTA</option>
-                <option value="MH">MARSHALL ISLANDS</option>
-                <option value="MQ">MARTINIQUE</option>
-                <option value="MR">MAURITANIA</option>
-                <option value="MU">MAURITIUS</option>
-                <option value="YT">MAYOTTE</option>
-                <option value="MX">MEXICO</option>
-                <option value="MC">MONACO</option>
-                <option value="MN">MONGOLIA</option>
-                <option value="MS">MONTSERRAT</option>
-                <option value="MA">MOROCCO</option>
-                <option value="MZ">MOZAMBIQUE</option>
-                <option value="MM">MYANMAR</option>
-                <option value="NA">NAMIBIA</option>
-                <option value="NR">NAURU</option>
-                <option value="NP">NEPAL</option>
-                <option value="NL">NETHERLANDS</option>
-                <option value="AN">NETHERLANDS ANTILLES</option>
-                <option value="NC">NEW CALEDONIA</option>
-                <option value="NZ">NEW ZEALAND</option>
-                <option value="NI">NICARAGUA</option>
-                <option value="NE">NIGER</option>
-                <option value="NG">NIGERIA</option>
-                <option value="NU">NIUE</option>
-                <option value="NF">NORFOLK ISLAND</option>
-                <option value="MP">NORTHERN MARIANA ISLANDS</option>
-                <option value="NO">NORWAY</option>
-                <option value="OM">OMAN</option>
-                <option value="PK">PAKISTAN</option>
-                <option value="PW">PALAU</option>
-                <option value="PA">PANAMA</option>
-                <option value="PG">PAPUA NEW GUINEA</option>
-                <option value="PY">PARAGUAY</option>
-                <option value="PE">PERU</option>
-                <option value="PH">PHILIPPINES</option>
-                <option value="PN">PITCAIRN</option>
-                <option value="PL">POLAND</option>
-                <option value="PT">PORTUGAL</option>
-                <option value="PR">PUERTO RICO</option>
-                <option value="QA">QATAR</option>
-                <option value="RE">REUNION</option>
-                <option value="RO">ROMANIA</option>
-                <option value="RU">RUSSIAN FEDERATION</option>
-                <option value="RW">RWANDA</option>
-                <option value="SH">SAINT HELENA</option>
-                <option value="KN">SAINT KITTS AND NEVIS</option>
-                <option value="LC">SAINT LUCIA</option>
-                <option value="PM">SAINT PIERRE AND MIQUELON</option>
-                <option value="VC">SAINT VINCENT AND THE GRENADINES</option>
-                <option value="WS">SAMOA</option>
-                <option value="SM">SAN MARINO</option>
-                <option value="ST">SAO TOME AND PRINCIPE</option>
-                <option value="SA">SAUDI ARABIA</option>
-                <option value="SN">SENEGAL</option>
-                <option value="CS">SERBIA AND MONTENEGRO</option>
-                <option value="SC">SEYCHELLES</option>
-                <option value="SL">SIERRA LEONE</option>
-                <option value="SG">SINGAPORE</option>
-                <option value="SK">SLOVAKIA</option>
-                <option value="SI">SLOVENIA</option>
-                <option value="SB">SOLOMON ISLANDS</option>
-                <option value="SO">SOMALIA</option>
-                <option value="ZA">SOUTH AFRICA</option>
-                <option value="GS">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option>
-                <option value="ES">SPAIN</option>
-                <option value="LK">SRI LANKA</option>
-                <option value="SD">SUDAN</option>
-                <option value="SR">SURINAME</option>
-                <option value="SJ">SVALBARD AND JAN MAYEN ISLANDS</option>
-                <option value="SZ">SWAZILAND</option>
-                <option value="SE">SWEDEN</option>
-                <option value="CH">SWITZERLAND</option>
-                <option value="SY">SYRIAN ARAB REPUBLIC</option>
-                <option value="TW">TAIWAN</option>
-                <option value="TJ">TAJIKISTAN</option>
-                <option value="TH">THAILAND</option>
-                <option value="TL">TIMOR-LESTE</option>
-                <option value="TG">TOGO</option>
-                <option value="TK">TOKELAU</option>
-                <option value="TO">TONGA</option>
-                <option value="TT">TRINIDAD AND TOBAGO</option>
-                <option value="TN">TUNISIA</option>
-                <option value="TR">TURKEY</option>
-                <option value="TM">TURKMENISTAN</option>
-                <option value="TC">TURKS AND CAICOS ISLANDS</option>
-                <option value="TV">TUVALU</option>
-                <option value="UG">UGANDA</option>
-                <option value="UA">UKRAINE</option>
-                <option value="AE">UNITED ARAB EMIRATES</option>
-                <option value="GB">UNITED KINGDOM</option>
-                <option value="US">UNITED STATES</option>
-                <option value="UM">UNITED STATES MINOR OUTLYING ISLANDS</option>
-                <option value="UY">URUGUAY</option>
-                <option value="UZ">UZBEKISTAN</option>
-                <option value="VU">VANUATU</option>
-                <option value="VE">VENEZUELA</option>
-                <option value="VN">VIET NAM</option>
-                <option value="WF">WALLIS AND FUTUNA ISLANDS</option>
-                <option value="EH">WESTERN SAHARA</option>
-                <option value="YE">YEMEN</option>
-                <option value="ZM">ZAMBIA</option>
-                <option value="ZW">ZIMBABWE</option>
-            </select>
-        </div>
 
             <div class="input-group">
-                <textarea id="address" name="address" required></textarea>
-                <label for="address">Адрес</label>
+
+                <input name="last" type="text" id="lastName" required>
+                <label for="lastName">Фамилия</label>
+
+            </div>
+        </div>
+
+
+            <div class="form_group">
+                <label>Дата рождения </label>
+                <div class="birthday_select">
+                    <select class="form_control">
+                        <option>день</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <select class="form_control">
+                        <option>месяц</option>
+                        <option value="1">января</option>
+                        <option value="2">февраля</option>
+                        <option value="3">марта</option>
+                        <option value="4">апреля</option>
+                        <option value="5">мая</option>
+                        <option value="6">июня</option>
+                        <option value="7">июля</option>
+                        <option value="8">августа</option>
+                        <option value="9">сентября</option>
+                        <option value="10">октября</option>
+                        <option value="11">ноября</option>
+                        <option value="12">декабря</option>
+                    </select>
+                    <select class="form_control">
+                        <option>день</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                </div>
             </div>
 
-            <div class="phone">
+            <div class="form_group">
+                <label>Пол</label>
+
+                <div class="genderUser">
+                    <div class="gender">
+
+                        <input name="gender" type="radio" id="genderMale" checked>
+                        <label for="genderMale">Мужской</label>
+                    </div>
+
+                    <div class="gender">
+
+                        <input name="gender" type="radio" id="genderFemale">
+                        <label for="genderFemale">Женский</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="input-group">
+                    <label for="country">Страна</label>
+                    <select size="1" name="countru" id="country">
+                        <option value="">Выберите страну</option>
+                        <option value="2">Беларусь</option>
+                        <option value="1">Россия</option>
+                        <option value="" disabled="">----------</option>
+                        <option value="42">Австралия</option>
+                        <option value="3">Австрия</option>
+                        <option value="43">Азербайджан</option>
+                        <option value="4">Албания</option>
+                        <option value="112">Алжир</option>
+                        <option value="5">Андорра</option>
+                        <option value="75">Аргентина</option>
+                        <option value="44">Армения</option>
+                        <option value="120">Афгагистан</option>
+                        <option value="117">Бангладеш</option>
+                        <option value="6">Украина</option>
+                        <option value="115">Белиз</option>
+                        <option value="7">Бельгия</option>
+                        <option value="8">Болгария</option>
+                        <option value="119">Босния и Герцеговина</option>
+                        <option value="96">Бразилия</option>
+                        <option value="9">Великобритания</option>
+                        <option value="10">Венгрия</option>
+                        <option value="111">Венесуэла</option>
+                        <option value="72">Вьетнам</option>
+                        <option value="11">Германия</option>
+                        <option value="12">Греция</option>
+                        <option value="45">Грузия</option>
+                        <option value="13">Дания</option>
+                        <option value="70">Доминика</option>
+                        <option value="100">Доминиканская Республика</option>
+                        <option value="46">Египет</option>
+                        <option value="47">Израиль</option>
+                        <option value="83">Индия</option>
+                        <option value="94">Индонезия</option>
+                        <option value="103">Иордания</option>
+                        <option value="91">Иран</option>
+                        <option value="14">Ирландия</option>
+                        <option value="15">Исландия</option>
+                        <option value="16">Испания</option>
+                        <option value="17">Италия</option>
+                        <option value="93">Йемен</option>
+                        <option value="18">Казахстан</option>
+                        <option value="114">Камбоджа</option>
+                        <option value="48">Канада</option>
+                        <option value="116">Катар</option>
+                        <option value="49">Кипр</option>
+                        <option value="50">Киргизия</option>
+                        <option value="58">Китай</option>
+                        <option value="110">КНДР</option>
+                        <option value="102">Колумбия</option>
+                        <option value="59">Корея</option>
+                        <option value="121">Кувейт</option>
+                        <option value="19">Латвия</option>
+                        <option value="124">Ливан</option>
+                        <option value="20">Литва</option>
+                        <option value="21">Лихтенштейн</option>
+                        <option value="22">Люксембург</option>
+                        <option value="23">Македония</option>
+                        <option value="123">Малайзия</option>
+                        <option value="24">Мальта</option>
+                        <option value="113">Марокко</option>
+                        <option value="57">Мексика</option>
+                        <option value="25">Молдова</option>
+                        <option value="73">Монголия</option>
+                        <option value="122">Мьянма</option>
+                        <option value="95">Непал</option>
+                        <option value="118">Нигерия</option>
+                        <option value="26">Нидерланды</option>
+                        <option value="63">Новая Зеландия</option>
+                        <option value="27">Норвегия</option>
+                        <option value="89">ОАЭ</option>
+                        <option value="101">Пакистан</option>
+                        <option value="28">Польша</option>
+                        <option value="29">Португалия</option>
+                        <option value="2">Россия</option>
+                        <option value="30">Румыния</option>
+                        <option value="97">Саудовская Аравия</option>
+                        <option value="51">Сербия</option>
+                        <option value="90">Сингапур</option>
+                        <option value="99">Сирия</option>
+                        <option value="31">Словакия</option>
+                        <option value="32">Словения</option>
+                        <option value="41">США</option>
+                        <option value="52">Таджикистан</option>
+                        <option value="71">Таиланд</option>
+                        <option value="98">Тайвань</option>
+                        <option value="125">Теркс и Кайкос</option>
+                        <option value="107">Тунис</option>
+                        <option value="53">Туркменистан</option>
+                        <option value="33">Турция</option>
+                        <option value="109">Уганда</option>
+                        <option value="54">Узбекистан</option>
+                        <option value="1">Украина</option>
+                        <option value="108">Филиппины</option>
+                        <option value="34">Финляндия</option>
+                        <option value="35">Франция</option>
+                        <option value="36">Хорватия</option>
+                        <option value="92">Черногория</option>
+                        <option value="37">Чехия</option>
+                        <option value="104">Чили</option>
+                        <option value="38">Швейцария</option>
+                        <option value="39">Швеция</option>
+                        <option value="106">Шри-Ланка</option>
+                        <option value="126">Эквадор</option>
+                        <option value="40">Эстония</option>
+                        <option value="105">ЮАР</option>
+                        <option value="55">Япония</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="citi">Город</label>
+                    <select size="1" name="citi" id="citi">
+                        <option value="">Выберите город</option>
+                        <option value="983">Минск</option>
+                        <option value="986">Гомель</option>
+                        <option value="1003">Витебск</option>
+                        <option value="" disabled="">----------</option>
+                        <option value="975">Барановичи</option>
+                        <option value="976">Белоозерск</option>
+                        <option value="977">Береза</option>
+                        <option value="978">Березино</option>
+                        <option value="979">Бобруйск</option>
+                        <option value="980">Борисов</option>
+                        <option value="1511">Браслав</option>
+                        <option value="981">Брест</option>
+                        <option value="2195">Верхнедвинск</option>
+                        <option value="982">Вилейка</option>
+                        <option value="983">Витебск</option>
+                        <option value="2015">Волковыск</option>
+                        <option value="1799">Ганцевичи</option>
+                        <option value="984">Глубокое</option>
+                        <option value="985">Глуск</option>
+                        <option value="986">Гомель</option>
+                        <option value="1528">Горки</option>
+                        <option value="987">Гродно</option>
+                        <option value="988">Дзержинск</option>
+                        <option value="1747">Дрибин</option>
+                        <option value="989">Дрогичин</option>
+                        <option value="990">Дружный</option>
+                        <option value="991">Ельск</option>
+                        <option value="2065">Жабинка</option>
+                        <option value="992">Житковичи</option>
+                        <option value="993">Жлобин</option>
+                        <option value="994">Жодино</option>
+                        <option value="995">Заславль</option>
+                        <option value="996">Зельва</option>
+                        <option value="997">Иваново</option>
+                        <option value="1484">Ивацевичи</option>
+                        <option value="2361">Ивье</option>
+                        <option value="2491">Калинковичи</option>
+                        <option value="2562">Клецк</option>
+                        <option value="2077">Климовичи</option>
+                        <option value="2572">Кличев</option>
+                        <option value="998">Кобрин</option>
+                        <option value="1506">Копыль</option>
+                        <option value="999">Костюковичи</option>
+                        <option value="1819">Кричев</option>
+                        <option value="2642">Лепель</option>
+                        <option value="1000">Лида</option>
+                        <option value="1001">Лунинец</option>
+                        <option value="2321">Любань</option>
+                        <option value="1940">Марьина Горка</option>
+                        <option value="1002">Мачулищи</option>
+                        <option value="2362">Микашевичи</option>
+                        <option value="1003">Минск</option>
+                        <option value="2668">Миоры</option>
+                        <option value="2551">Могилев</option>
+                        <option value="1004">Могилёв</option>
+                        <option value="1005">Мозырь</option>
+                        <option value="1006">Молодечно</option>
+                        <option value="1007">Мосты</option>
+                        <option value="1493">Мстиславль</option>
+                        <option value="1008">Мядель</option>
+                        <option value="1732">Несвиж</option>
+                        <option value="1009">Новогрудок</option>
+                        <option value="2591">Новолукомль</option>
+                        <option value="1010">Новополоцк</option>
+                        <option value="1513">Октябрьский</option>
+                        <option value="1011">Орша</option>
+                        <option value="1012">Осиповичи</option>
+                        <option value="1013">Островец</option>
+                        <option value="1014">Петриков</option>
+                        <option value="1015">Пинск</option>
+                        <option value="1016">Полоцк</option>
+                        <option value="1017">Поставы</option>
+                        <option value="2191">Пружаны</option>
+                        <option value="1018">Речица</option>
+                        <option value="1019">Рогачев</option>
+                        <option value="1020">Светлогорск</option>
+                        <option value="2051">Свислочь</option>
+                        <option value="1021">Слоним</option>
+                        <option value="1022">Слуцк</option>
+                        <option value="1023">Смолевичи</option>
+                        <option value="1024">Сморгонь</option>
+                        <option value="1025">Солигорск</option>
+                        <option value="2619">Старые Дороги</option>
+                        <option value="1026">Столин</option>
+                        <option value="2374">Толочин</option>
+                        <option value="1027">Ухвала</option>
+                        <option value="2155">Ушачи</option>
+                        <option value="2123">Фаниполь</option>
+                        <option value="2409">Хойники</option>
+                        <option value="2643">Чечерск</option>
+                        <option value="2320">Шарковщина</option>
+                        <option value="1028">Щучин</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!--<div class="input-group">
+                <textarea id="address" name="address" required></textarea>
+                <label for="address">Адрес</label>
+            </div>-->
+
+            <div class="form_group">
+
+                <input id="login" type="text" name="login" required>
+                <label for="login">Логин</label>
+            </div>
+
+            <div class="row">
+
+                <div class="input-group">
+
+                    <input type="email" name="email" id="email2" required>
+                    <label for="email2">Email</label>
+
+                </div>
+
+            <div class="input-group">
                 <label for="phoneNumber">Номер тел.</label>
                 <input type="number" name="phone" id="phoneNumber">
             </div>
 
-            <div class="input-group">
-                <input type="email" name="email" id="email2" required>
-                <label for="email2">E-mail</label>
+
             </div>
+            <div class="row">
             <div class="input-group">
+
                 <input name="data" type="password" id="passwordUser1" required>
                 <label for="passwordUser1">Пороль</label>
+
             </div>
             <div class="input-group">
+
                 <input name="data" type="password" id="passwordUser2" required>
-                <label for="passwordUser2">Повторить</label>
+                <label for="passwordUser2">Повтор пароля</label>
+
             </div>
-            <div class="">
+            </div>
+            <div class="checkbox">
                 <input type="checkbox" id="checkbox2">
                 <label for="checkbox2">Я принимаю условия <a href="#">пользовательского соглашения...</a></label>
             </div>
             <div class="submit">
-                <input type="submit" name="submit" value="Отправить">
+                <input type="submit" name="submit" value="Зарегистрироваться">
             </div>
 
     </form>
@@ -389,8 +481,10 @@
         <div class="information">
             <h3>Контакты</h3>
             <p>Студия декора "Художественная роспись"</p>
-            <p class="text_service">Юридический адрес — Республика Беларусь, 220034, город Минск, ул. Чапаева, дом 3, кабинет 326, блок 4.
-                Регистрационный номер, дата регистрации, регистрирующий орган — 192369058, 30.10.2014, Главное управление юстиции Мингорисполкома. <br>&#169; 2016 - 2017</p>
+            <p class="text_service">Юридический адрес — Республика Беларусь, 220034, город Минск, ул. Чапаева, дом 3,
+                кабинет 326, блок 4.
+                Регистрационный номер, дата регистрации, регистрирующий орган — 192369058, 30.10.2014, Главное
+                управление юстиции Мингорисполкома. <br>&#169; 2016 - 2017</p>
         </div>
         <div class="footer_maps">
             <h3>Карта сайта</h3>

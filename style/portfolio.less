@@ -1,0 +1,122 @@
+@import "fonts";
+@import "variables";
+
+
+@media all and (min-width: 990px) {
+
+  .portfolio_img {
+    width: 70%;
+    margin: 0 auto 50px auto;
+    display: flex;
+    flex-direction: column;
+
+    .navigation {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+
+        a {
+          display: block;
+          text-decoration: none;
+          height: 50px;
+        }
+      }
+    }
+
+    .portfolio_top {
+      display: flex;
+
+      width: 100%;
+
+      .portfolio_top1 {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        li {
+          display: flex;
+          width: 33%;
+          position: relative;
+
+          &:hover div {
+            opacity: 0.7;
+          }
+
+          div {
+            width: 76%;
+            height: 30%;
+            position: absolute;
+            opacity: 0;
+            background-color: white;
+            top: 40%;
+            left: 7%;
+            text-align: center;
+            overflow: hidden;
+          }
+
+          img {
+            width: 90%;
+            height: 95%;
+          }
+        }
+      }
+
+    }
+
+    .portfolio_centre {
+      display: flex;
+      justify-content: space-between;
+      margin: 50px 0;
+
+      ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+        width: 100%;
+
+        li {
+          width: 48%;
+          position: relative;
+
+          &:hover div {
+            opacity: 0.7;
+          }
+
+          div {
+            position: absolute;
+            text-align: center;
+            background-color: white;
+            opacity: 0;
+            width: 60%;
+            height: 50%;
+            top: 22%;
+            left: 15%;
+          }
+
+          img {
+            width: 90%;
+            height: 95%;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@media all and (min-width: 1px) and (max-width: 989px) {
+
+.portfolio_img {
+  width: 90%;
+  margin: auto;
+}
+
+}
