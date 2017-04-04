@@ -1,0 +1,38 @@
+@media all and (min-width: 990px) {
+  #information_contacts {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+  }
+  #information_contacts .information_contacts {
+    text-align: center;
+  }
+  #information_contacts .information_contacts .list {
+    text-align: left;
+  }
+  #information_contacts .contacts {
+    width: 25%;
+    margin: auto;
+    text-align: center;
+  }
+}
+@media all and (min-width: 1px) and (max-width: 989px) {
+  #information_contacts {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+  }
+  #information_contacts .information_contacts {
+    text-align: center;
+  }
+  #information_contacts .information_contacts .list {
+    text-align: left;
+  }
+  #information_contacts .contacts {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+}
