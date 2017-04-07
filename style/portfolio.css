@@ -1,7 +1,7 @@
 @media all and (min-width: 990px) {
   .portfolio_img {
     width: 70%;
-    margin: 0 auto 50px auto;
+    margin: 50px auto;
     display: flex;
     flex-direction: column;
   }
@@ -88,7 +88,88 @@
 }
 @media all and (min-width: 1px) and (max-width: 989px) {
   .portfolio_img {
+    display: flex;
+    flex-direction: column;
     width: 90%;
-    margin: auto;
+    margin: 0 auto 50px auto;
+  }
+  .portfolio_img .portfolio_top {
+    display: flex;
+    width: 100%;
+  }
+  .portfolio_img .portfolio_top .portfolio_top1 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: -3;
+  }
+  .portfolio_img .portfolio_top .portfolio_top1 li {
+    display: flex;
+    width: 32%;
+    position: relative;
+  }
+  .portfolio_img .portfolio_top .portfolio_top1 li div {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    opacity: 0.7;
+    background-color: white;
+    top: 75%;
+    left: 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  .portfolio_img .portfolio_top .portfolio_top1 li div h3 {
+    margin: 0;
+  }
+  .portfolio_img .portfolio_top .portfolio_top1 li div p {
+    margin: 0;
+  }
+  .portfolio_img .portfolio_top .portfolio_top1 li img {
+    width: 100%;
+    height: 95%;
+  }
+  .portfolio_img .portfolio_centre {
+    margin: 50px auto;
+  }
+  .portfolio_img .portfolio_centre ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .portfolio_img .portfolio_centre ul li {
+    width: 48%;
+    position: relative;
+    z-index: -1;
+  }
+  .portfolio_img .portfolio_centre ul li div {
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    opacity: 0.5;
+    width: 100%;
+    height: 20%;
+    top: 75%;
+    left: 0;
+    overflow: hidden;
+  }
+  .portfolio_img .portfolio_centre ul li div h3 {
+    margin: 0;
+  }
+  .portfolio_img .portfolio_centre ul li div p {
+    margin: 0;
+  }
+  .portfolio_img .portfolio_centre ul li div span {
+    display: none;
+  }
+  .portfolio_img .portfolio_centre ul li img {
+    width: 100%;
+    height: 95%;
   }
 }

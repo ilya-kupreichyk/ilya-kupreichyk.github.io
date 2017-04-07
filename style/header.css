@@ -16,9 +16,9 @@
     text-align: center;
   }
   #header #header_inner .information img {
-    width: 80px;
+    width: 60px;
     height: 80px;
-    margin-top: -10px;
+    margin-bottom: 20px;
   }
   #header #header_inner .information .text_logo {
     font-family: UkrainianChance;
@@ -55,7 +55,7 @@
   #header #header_inner .header_menu .login_top .login1 .login2 {
     position: relative;
   }
-  #header #header_inner .header_menu .login_top .login1 .login2:hover .login3 {
+  #header #header_inner .header_menu .login_top .login1 .login2:hover > .login3 {
     height: 1200%;
   }
   #header #header_inner .header_menu .login_top .login1 .login3 {
@@ -76,19 +76,36 @@
     border: 1px solid white;
     border-radius: 3px;
     background-color: white;
-    width: 220px;
+    width: 300px;
     height: 150px;
     padding: 20px;
+  }
+  #header #header_inner .header_menu .login_top .login1 .login3 form .password {
+    display: flex;
+    flex-direction: column;
+  }
+  #header #header_inner .header_menu .login_top .login1 .login3 form .entrance {
+    display: flex;
+    align-items: center;
   }
   #header #header_inner .header_menu .login_top .login1 .login3 form input[type="email"],
   #header #header_inner .header_menu .login_top .login1 .login3 form input[type="password"] {
     width: 200px;
     height: 20px;
-    border-radius: 13px;
+    border-radius: 4px;
     margin-bottom: 15px;
     padding-left: 10px;
-    border: 1px solid #1a7480;
-    box-shadow: inset 0 1px 18px -2px rgba(0, 0, 0, 0.75);
+    outline: none;
+    border: 1px solid #ccc;
+  }
+  #header #header_inner .header_menu .login_top .login1 .login3 form input[type="email"]:focus,
+  #header #header_inner .header_menu .login_top .login1 .login3 form input[type="password"]:focus {
+    border-color: #66afe9;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  }
+  #header #header_inner .header_menu .login_top .login1 .login3 form input[type="email"]:hover,
+  #header #header_inner .header_menu .login_top .login1 .login3 form input[type="password"]:hover {
+    border-color: #66afe9;
   }
   #header #header_inner .header_menu .login_top .login1 .login3 form input[type="email"]:focus,
   #header #header_inner .header_menu .login_top .login1 .login3 form input[type="password"]:focus {
@@ -102,10 +119,11 @@
     text-align: center;
   }
   #header #header_inner .header_menu .login_top .login1 .login3 form input[type="submit"] {
-    margin-left: 25px;
-    border-radius: 10px;
+    margin: 0 15px;
+    border-radius: 4px;
     border: none;
     width: 70px;
+    height: 30px;
     background-color: #4b2a36;
     color: white;
   }
@@ -148,6 +166,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: baseline;
+  }
+  #header #header_inner .header_menu .menu ul {
+    list-style: none;
   }
   #header #header_inner .header_menu .menu .references_header {
     display: flex;
@@ -173,33 +194,39 @@
 }
 @media all and (min-width: 1px) and (max-width: 989px) {
   #header {
-    display: flex;
-    justify-content: flex-end;
-    background: url("../images/header_image.jpg") no-repeat;
-    background-size: auto;
-    overflow: hidden;
     height: 350px;
   }
   #header #header_inner {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   #header #header_inner .information {
     display: flex;
     justify-content: center;
+    height: 290px;
+    width: 100%;
+    background: #bf7885;
+    background: linear-gradient(to top, #A65463, #bf7885);
+    position: fixed;
+    z-index: 0;
   }
   #header #header_inner .information img {
-    width: 80px;
+    width: 60px;
     height: 80px;
+    position: fixed;
+    left: 48%;
   }
   #header #header_inner .information .text_logo {
     font-family: UkrainianChance;
     text-decoration: none;
-    font-size: 29pt;
+    font-size: 35pt;
     text-align: center;
     color: #1a7480;
+    position: fixed;
+    left: 25%;
+    top: 85px;
   }
   #header #header_inner .information .text_info {
     display: none;
@@ -219,6 +246,9 @@
   #header #header_inner .header_menu .login_top {
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 170px;
+    left: 70%;
   }
   #header #header_inner .header_menu .login_top .login1 {
     display: flex;
@@ -226,38 +256,63 @@
     margin-right: 35px;
     padding-bottom: 5px;
   }
+  #header #header_inner .header_menu .login_top .login1 span {
+    display: none;
+  }
   #header #header_inner .header_menu .login_top .login1 .login2 {
     position: relative;
   }
+  #header #header_inner .header_menu .login_top .login1 .login2 .login::before {
+    background-image: url('../images/icon_mob4.png');
+    background-size: 80px 80px;
+    opacity: 0.8;
+    display: block;
+    width: 80px;
+    height: 80px;
+    content: "";
+  }
   #header #header_inner .header_menu .login_top .login1 .login2:hover .login3 {
+    display: block;
     height: 1200%;
   }
   #header #header_inner .header_menu .login_top .login1 .login3 {
-    display: block;
+    display: none;
     position: absolute;
     height: 0;
     overflow: hidden;
-    top: 110%;
-    left: -250%;
-    transition: height 0.5s;
-    opacity: 0.8;
+    top: 105%;
+    left: -700%;
   }
   #header #header_inner .header_menu .login_top .login1 .login3 li {
     display: flex;
     flex-direction: column;
   }
   #header #header_inner .header_menu .login_top .login1 .login3 form {
-    border: 1px solid white;
-    border-radius: 3px;
+    border-radius: 4px;
     background-color: white;
-    width: 220px;
+    width: 90%;
     height: 150px;
     padding: 20px;
+    border: 1px solid black;
+  }
+  #header #header_inner .header_menu .login_top .login1 .login3 form .entrance {
+    display: flex;
+    margin-left: 150px;
+    align-items: center;
+    justify-content: center;
+  }
+  #header #header_inner .header_menu .login_top .login1 .login3 form .email {
+    display: flex;
+    justify-content: space-between;
+  }
+  #header #header_inner .header_menu .login_top .login1 .login3 form .password {
+    display: flex;
+    justify-content: space-between;
   }
   #header #header_inner .header_menu .login_top .login1 .login3 form input[type="email"],
   #header #header_inner .header_menu .login_top .login1 .login3 form input[type="password"] {
-    width: 200px;
-    height: 20px;
+    width: 370px;
+    height: 40px;
     border-radius: 13px;
     margin-bottom: 15px;
     padding-left: 10px;
@@ -276,10 +331,11 @@
     text-align: center;
   }
   #header #header_inner .header_menu .login_top .login1 .login3 form input[type="submit"] {
-    margin-left: 25px;
-    border-radius: 10px;
+    margin: 0 25px;
+    border-radius: 4px;
     border: none;
-    width: 70px;
+    width: 200px;
+    height: 50px;
     background-color: #4b2a36;
     color: white;
   }
@@ -297,7 +353,7 @@
     opacity: 0.8;
   }
   #header #header_inner .header_menu .login_top .search {
-    display: flex;
+    display: none;
     justify-content: flex-end;
     width: 120px;
   }
@@ -323,25 +379,63 @@
     justify-content: flex-end;
     align-items: baseline;
   }
+  #header #header_inner .header_menu .menu ul {
+    list-style: none;
+  }
   #header #header_inner .header_menu .menu .references_header {
     display: flex;
-    list-style-type: none;
-    justify-content: flex-end;
+    width: 50%;
+    justify-content: space-between;
     padding: 0;
+    position: fixed;
+    top: 170px;
+    left: 15%;
+  }
+  #header #header_inner .header_menu .menu .references_header span {
+    display: none;
+  }
+  #header #header_inner .header_menu .menu .references_header .about a::before {
+    background-image: url('../images/icon_mob3.png');
+    background-size: 80px 80px;
+    opacity: 0.8;
+    display: block;
+    width: 80px;
+    height: 80px;
+    content: "";
+  }
+  #header #header_inner .header_menu .menu .references_header .portfolio_mob a::before {
+    background: url('../images/icon_mob1.png') no-repeat;
+    background-size: 80px 70px;
+    opacity: 0.8;
+    display: block;
+    width: 80px;
+    height: 80px;
+    content: "";
+    margin-top: 5px;
+  }
+  #header #header_inner .header_menu .menu .references_header .services_mob a::before {
+    background-image: url('../images/icon_mob2.png');
+    background-size: 80px 80px;
+    opacity: 0.8;
+    display: block;
+    width: 80px;
+    height: 80px;
+    content: "";
+  }
+  #header #header_inner .header_menu .menu .references_header .contacts_mob {
+    display: none;
+  }
+  #header #header_inner .header_menu .menu .references_header .contacts_mob a::before {
+    background-image: url('../images/icon_mob4.png');
+    background-size: 80px 80px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    content: "";
   }
   #header #header_inner .header_menu .menu .references_header a {
-    font-family: "Kozuka Gothic Pro";
+    background-size: 40px 40px;
     display: block;
     text-decoration: none;
-    color: white;
-    padding: 10px 13px;
-    transition: 0.5s;
-  }
-  #header #header_inner .header_menu .menu .references_header a:hover {
-    color: #4b2a36;
-    background-color: white;
-    opacity: 0.6;
-    text-decoration: underline;
-    border-radius: 4px;
   }
 }

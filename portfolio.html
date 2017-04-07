@@ -26,8 +26,8 @@
             <div class="">
                 <section class="login_top">
                     <ul class="login1">
-                        <li><a href="index.html">Главная</a> </li>
-                        <li class="login2"><a href="#">Войти</a>
+                        <li><a href="index.html"><span>Главная</span></a></li>
+                        <li class="login2"><a href="#" class="login"><span class="text">Войти</span></a>
                             <ul class="login3">
                                 <li>
                                     <form>
@@ -37,25 +37,20 @@
                                         </div>
                                         <div class="password">
                                             <label for="password">Пороль</label>
-                                            <input type="password" name="password" id="password" placeholder="" required="">
+                                            <input type="password" name="password" id="password" placeholder=""
+                                                   required="">
                                         </div>
-                                        <input type="checkbox"  name="remember" id="checkbox">
-                                        <label for="checkbox">Запомнить?</label>
-
-
-                                        <input type="submit" name="submit" value="Войти">
-                                        <a href="registration.html">Регистрация</a>
-
-
+                                        <div class="entrance">
+                                            <input type="checkbox" name="remember" id="checkbox">
+                                            <label for="checkbox">Запомнить?</label>
+                                            <input type="submit" name="submit" value="Войти">
+                                            <a href="registration.html">Регистрация</a>
+                                        </div>
                                     </form>
-
-
                                 </li>
                             </ul>
-
                         </li>
                     </ul>
-
 
                     <form class="search">
                         <label for="search"></label>
@@ -65,45 +60,66 @@
             </div>
             <nav class="menu">
                 <ul class="references_header">
-                    <li><a href="contacts.html" target="_blank">О нас</a></li>
-                    <li><a href="portfolio.html">Портфолио</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="contacts.html" target="_blank">Контакты</a></li>
+                    <li class="about"><a href="index.html" target="_blank"><span class="text">О нас</span></a></li>
+                    <li class="portfolio_mob"><a href="portfolio.html" target="_blank"><span
+                            class="text">Портфолио</span></a></li>
+                    <li class="services_mob"><a href="contacts.html"><span class="text">Услуги</span></a></li>
+                    <li class="contacts_mob"><a href="contacts.html" target="_blank"><span class="text">Контакты</span></a>
+                    </li>
                 </ul>
-
-
             </nav>
         </nav>
-
     </div>
-
 </header>
-
 
 
 <section class="portfolio_img">
 
     <div class="portfolio_top">
         <ul class="portfolio_top1">
-            <li><div>12345</div><img src="images/portfolio11.jpg"></li>
-            <li><div><h3>"Солнечная Италия"</h3><p>Роспись стены (акрил)<br>2.70*2.10</p></div><img src="images/portfolio12.jpg"></li>
-            <li><div>12345</div><img src="images/portfolio13.jpg"></li>
+            <li>
+                <div><h3>"Солнечная Италия"</h3>
+                    <p>Роспись стены (акрил)<br>2.70*2.10</p></div>
+                <img src="images/portfolio11.jpg"></li>
+            <li>
+                <div><h3>"Солнечная Италия"</h3>
+                    <p>Роспись стены (акрил)<br>2.70*2.10</p></div>
+                <img src="images/portfolio12.jpg"></li>
+            <li>
+                <div><h3>"Солнечная Италия"</h3>
+                    <p>Роспись стены (акрил)<br>2.70*2.10</p></div>
+                <img src="images/portfolio13.jpg"></li>
 
         </ul>
-</div>
-        <div class="portfolio_centre">
-            <ul>
-                <li><div>12345</div><img src="images/portfolio14.jpg"></li>
-                <li><div>12345</div><img src="images/portfolio15.jpg"></li>
+    </div>
+    <div class="portfolio_centre">
+        <ul>
+            <li>
+                <div><h3>"Солнечная Италия"</h3>
+                    <p>Роспись стены (акрил)<span><br></span>2.70*2.10</p></div>
+                <img src="images/portfolio14.jpg"></li>
+            <li>
+                <div><h3>"Солнечная Италия"</h3>
+                    <p>Роспись стены (акрил)<span><br></span>2.70*2.10</p></div>
+                <img src="images/portfolio15.jpg"></li>
 
-            </ul>
+        </ul>
 
-        </div>
+    </div>
     <div class="portfolio_top">
         <ul class="portfolio_top1">
-            <li><div>12345</div><img src="images/portfolio16.jpg"></li>
-            <li><div>12345</div><img src="images/portfolio17.jpg"></li>
-            <li><div>12345</div><img src="images/portfolio18.jpg"></li>
+            <li>
+                <div><h3>"Солнечная Италия"</h3>
+                    <p>Роспись стены (акрил)<br>2.70*2.10</p></div>
+                <img src="images/portfolio16.jpg"></li>
+            <li>
+                <div><h3>"Солнечная Италия"</h3>
+                    <p>Роспись стены (акрил)<br>2.70*2.10</p></div>
+                <img src="images/portfolio17.jpg"></li>
+            <li>
+                <div><h3>"Солнечная Италия"</h3>
+                    <p>Роспись стены (акрил)<br>2.70*2.10</p></div>
+                <img src="images/portfolio18.jpg"></li>
 
         </ul>
     </div>
@@ -114,8 +130,10 @@
         <div class="information">
             <h3>Контакты</h3>
             <p>Студия декора "Художественная роспись"</p>
-            <p class="text_service">Юридический адрес — Республика Беларусь, 220034, город Минск, ул. Чапаева, дом 3, кабинет 326, блок 4.
-                Регистрационный номер, дата регистрации, регистрирующий орган — 192369058, 30.10.2014, Главное управление юстиции Мингорисполкома. <br>&#169; 2016 - 2017</p>
+            <p class="text_service">Юридический адрес — Республика Беларусь, 220034, город Минск, ул. Чапаева, дом 3,
+                кабинет 326, блок 4.
+                Регистрационный номер, дата регистрации, регистрирующий орган — 192369058, 30.10.2014, Главное
+                управление юстиции Мингорисполкома. <br>&#169; 2016 - 2017</p>
         </div>
         <div class="footer_maps">
             <h3>Карта сайта</h3>
@@ -128,9 +146,8 @@
                     <li><a href="index.html">Сотрудничество</a></li>
                 </ul>
             </div>
-
-
         </div>
+
         <div class="footer_social">
             <h3>Мы в соцсетях</h3>
             <div class="icons_footer">

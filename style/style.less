@@ -7,19 +7,13 @@
 @import "portfolio";
 
 body {
-
   margin: 0;
   padding: 0;
   width: 100%;
   font-family: "Segoe UI", sans-serif;
-
-
 }
 
-
-
 @media all and (min-width: 990px) {
-
 
   .text_info_large {
     font-size: 18pt;
@@ -57,11 +51,7 @@ body {
     opacity: 0.6;
     padding: 20px;
 
-
   }
-
-
-
 
   #wrapper {
     display: flex;
@@ -83,8 +73,6 @@ body {
       flex-wrap: wrap;
       justify-content: space-between;
       margin: 0 auto 50px auto;
-
-
 
       .content {
         width: 340px;
@@ -144,6 +132,7 @@ body {
         font-weight: 400;
         margin: 0;
         text-align: center;
+        color: lighten(@colorLogo, 5%);
       }
 
     }
@@ -196,32 +185,17 @@ body {
 
     }
 
-
   }
-
-
-
-
-
-  /*contacts*/
-
-
-  /*portfolio*/
-
-
-  /*registration*/
 
 }
 
-
 @media all and (min-width: 1px) and (max-width: 989px) {
-
-
 
   #wrapper {
     display: flex;
     flex-direction: column;
     margin: auto;
+    z-index: -2;
 
     h1 {
       text-align: center;
@@ -249,7 +223,7 @@ body {
         text-align: center;
 
         &:hover {
-          transform: scale(1.05);
+          transform: scale(1);
         }
 
         h2 {
@@ -291,7 +265,7 @@ body {
 
   .images_centre {
     .text_info {
-display: none;
+      display: none;
     }
   }
 
@@ -301,6 +275,7 @@ display: none;
     flex-wrap: wrap;
     width: 70%;
     margin: auto;
+    z-index: -3;
 
     a {
       display: block;
@@ -312,17 +287,17 @@ display: none;
       width: 240px;
       height: 350px;
       box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.55);
-      transition: all .7s;
       position: relative;
 
-      &:hover::after {
+      &::before {
         content: attr(data-title);
         margin: 0;
         width: 100%;
         text-align: center;
         position: absolute;
         color: white;
-        top: 90%;
+        top: 86%;
+        left: 0;
         font-family: @font-family_info;
         font-size: 18pt;
         background-color: #1a7480;
@@ -330,17 +305,11 @@ display: none;
 
       }
 
-      &:hover {
-        transform: scale(1.1);
-
-      }
-
       a {
-        display: flex;
+        display: block;
         justify-content: center;
       }
     }
   }
-
 
 }

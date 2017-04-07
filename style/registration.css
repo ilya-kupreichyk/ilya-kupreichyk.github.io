@@ -20,6 +20,9 @@
     align-items: center;
     margin-left: 10px;
   }
+  #registration .form .form_group .genderUser .gender input:focus {
+    box-shadow: none;
+  }
   #registration .form .form_group .genderUser .gender label {
     order: 2;
   }
@@ -29,6 +32,7 @@
     height: 30px;
     order: 1;
     outline: none;
+    padding-left: 10px;
   }
   #registration .form .form_group input:required + label::after {
     content: "*";
@@ -116,7 +120,7 @@
     font-weight: 600;
   }
   #registration .form .form_group {
-    margin: 0 0 20px 2%;
+    margin: 0 0 20px 3%;
     display: flex;
     flex-direction: column;
     width: 97%;
@@ -164,6 +168,7 @@
     flex-direction: column;
     margin-left: 20px;
     width: 100%;
+    margin-bottom: 20px;
   }
   #registration .form .row .input-group select {
     border-radius: 4px;
