@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5204fa0d-b67f-4557-877f-40c3bcc20d7a" name="Default" comment="font added and GA">
-      <change beforePath="" afterPath="$PROJECT_DIR$/fonts/UkrainianChance.TTF" />
+    <list default="true" id="5204fa0d-b67f-4557-877f-40c3bcc20d7a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/style/fonts.less" afterPath="$PROJECT_DIR$/style/fonts.less" />
+      <change beforePath="$PROJECT_DIR$/fonts/UkrainianChance.TTF" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -91,12 +90,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fonts.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fonts.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style/fonts.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
               <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/style/header.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="260" column="55" lean-forward="false" selection-start-line="260" selection-start-column="55" selection-end-line="260" selection-end-column="55" />
+              <folding>
+                <element signature="e#73#5819#0" expanded="false" />
+                <element signature="e#5876#13193#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -184,11 +196,6 @@
             <path>
               <item name="ilya-kupreichyk.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="ilya-kupreichyk.github.io" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ilya-kupreichyk.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ilya-kupreichyk.github.io" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="fonts" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="ilya-kupreichyk.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -332,7 +339,7 @@
       <workItem from="1493634229233" duration="14000" />
       <workItem from="1493634549325" duration="21000" />
       <workItem from="1518885969858" duration="458000" />
-      <workItem from="1518895549460" duration="1348000" />
+      <workItem from="1518895549460" duration="1740000" />
     </task>
     <task id="LOCAL-00001" summary="исправил">
       <created>1491117940490</created>
@@ -411,11 +418,18 @@
       <option name="project" value="LOCAL" />
       <updated>1518896185294</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="font added and GA">
+      <created>1518896914424</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1518896914424</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101160000" />
+    <option name="totallyTimeSpent" value="101552000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -694,13 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/header.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="835">
-          <caret line="275" column="63" lean-forward="false" selection-start-line="275" selection-start-column="63" selection-end-line="275" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -822,6 +829,17 @@
         <state relative-caret-position="221">
           <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/header.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="260" column="55" lean-forward="false" selection-start-line="260" selection-start-column="55" selection-end-line="260" selection-end-column="55" />
+          <folding>
+            <element signature="e#73#5819#0" expanded="false" />
+            <element signature="e#5876#13193#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
