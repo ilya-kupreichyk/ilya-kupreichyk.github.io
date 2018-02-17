@@ -262,27 +262,31 @@
 
   #header {
 
-    height: 350px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 280px;
 
     #header_inner {
       display: flex;
       flex-direction: column;
       width: 100%;
       margin: 0 auto;
+      //background: linear-gradient(to top, white, lighten(@colorHeaderMobile, 10%));
+      background: url("../images/header_mobile.jpg") no-repeat;
+      position: fixed;
 
       .information {
         display: flex;
-        justify-content: center;
-        height: 290px;
-        width: 100%;
-        background: #bf7885;
-        background: linear-gradient(to top, #A65463, #bf7885);
-        position: fixed;
+        height: 300px;
+        width: 80%;
+        margin: auto;
+justify-content: center;
         z-index: 0;
 
         img {
-          width: 60px;
-          height: 80px;
+          width: 50px;
+          height: 70px;
           position: fixed;
           left: 48%;
 
@@ -294,9 +298,7 @@
           font-size: 35pt;
           text-align: center;
           color: @colorLogo;
-          position: fixed;
-          left: 25%;
-          top: 85px;
+          margin-top: 80px;
 
         }
         .text_info {
@@ -320,7 +322,7 @@
           display: flex;
           align-items: center;
           position: fixed;
-          top: 170px;
+          top: 140px;
           left: 70%;
 
           .login1 {
@@ -337,9 +339,9 @@
               position: relative;
               .login::before {
 
-                background-image: url('../images/icon_mob4.png');
-                background-size: 80px 80px;
-                opacity: 0.8;
+                background: url('../images/icon_mob4.png') no-repeat;
+                background-size: 70px 70px;
+                opacity: 0.6;
                 display: block;
                 width: 80px;
                 height: 80px;
@@ -356,7 +358,7 @@
               position: absolute;
               height: 0;
               overflow: hidden;
-              top: 105%;
+              top: 86%;
               left: -700%;
 
               li {
@@ -490,7 +492,7 @@
             justify-content: space-between;
             padding: 0;
             position: fixed;
-            top: 170px;
+            top: 140px;
             left: 15%;
 
             span {
@@ -499,9 +501,9 @@
 
             .about {
               a::before {
-                background-image: url('../images/icon_mob3.png');
-                background-size: 80px 80px;
-                opacity: 0.8;
+                background: url('../images/icon_mob3.png') no-repeat;
+                background-size: 70px 70px;
+                opacity: 0.6;
                 display: block;
                 width: 80px;
                 height: 80px;
@@ -513,8 +515,8 @@
             .portfolio_mob {
               a::before {
                 background: url('../images/icon_mob1.png') no-repeat;
-                background-size: 80px 70px;
-                opacity: 0.8;
+                background-size: 70px 60px;
+                opacity: 0.6;
                 display: block;
                 width: 80px;
                 height: 80px;
@@ -526,9 +528,9 @@
 
             .services_mob {
               a::before {
-                background-image: url('../images/icon_mob2.png');
-                background-size: 80px 80px;
-                opacity: 0.8;
+                background: url('../images/icon_mob2.png') no-repeat;
+                background-size: 70px 70px;
+                opacity: 0.6;
                 display: block;
                 width: 80px;
                 height: 80px;
